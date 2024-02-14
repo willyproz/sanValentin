@@ -1,8 +1,10 @@
 body {
-  zoom: 150%; /* Puedes ajustar el valor según sea necesario */
-  
-}
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+.envlope-wrapper {
+  height: auto; /* Altura automática para adaptarse al contenido */
+}
 #envelope {
   margin: 150px;
   position: relative;
@@ -16,7 +18,16 @@ body {
   background-color: #f9c5c8;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  body {
+    zoom: 150%; /* Aplicar zoom para mejorar la legibilidad en dispositivos móviles */
+  }
 
+  .words {
+    font-size: 14px; /* Ajustar el tamaño de fuente */
+  }
+}
 .front {
   position: absolute;
   width: 0;
